@@ -1,0 +1,23 @@
+inventory-stock
+
+create table consumable_item(
+    id_item integer not null auto_increment primary key,
+    item_code varchar(24) not null unique,
+    item_name varchar(32) not null,
+    item_stock integer,
+    id_category integer);
+        
+create table consumable_item_in(
+    id_item integer not null,
+    in_time timestamp,
+    quantity integer,
+    price decimal,
+    id_vendor integer);
+
+create table consumable_item_out(
+    id_item integer not null,
+    out_time timestamp,
+    quantity integer,
+    user_name  varchar(32),
+    location varchar(32));
+    

@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/*
+body {
+	font-size: 12px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+*/
+.dialog label {
+	  width:100px;
+    float:left;
+}
+
+.dialog .field {
+	width:200px;	
+}
+
+#calendar {
+	width: 99%;
+	padding: 5px 2px 5px 2px;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #000; 
+}
+#calendar h2 { color: #000; }
+#eventDialog h5#event-date { color: #000; padding: 0; margin: 5px 0 5px 0; }

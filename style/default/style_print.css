@@ -1,0 +1,144 @@
+/* CSS Document */
+
+a{ color: #000; text-decoration: none}
+
+body{
+  width: 100%;
+  font-family:  arial, helvitica, serif, verdana;
+  background-color: #fff;
+  color: #000;
+}
+
+#contentcenter {
+  margin-top: 20px; 
+}
+
+
+#printout{
+  width: 1010px;	
+  
+}
+
+
+#header{
+  margin-left: 0;
+  border: 0 solid yellow;
+  text-align: left;
+  height: 85px;
+}
+
+.clear {
+  float : none;
+  clear : both;
+  height : 1px;
+}
+
+
+.signature {
+	border: 1px solid black;
+	width: 200px;
+	height: 80px;
+ }
+ 
+ .note {
+	font-size: 12px; 
+	background-color: #fff; 
+	text-align: left; 
+	padding: 2px 0 3px 5px;
+	border: 1px solid #000;
+ }
+ 
+
+button {
+	margin: 0;
+	padding: 1px 5px 1px 5px;
+	background-color: #aaa;
+	border: 1px solid #777;
+	color: #fff;
+	text-decoration: none;
+}
+button:hover{	
+	background-color: #ddd;
+	color: #000;
+}
+
+.clearsign{
+	font-size: 9pt;
+	display: inline-block;
+	color: #fff;
+}
+
+table {
+  font-size : 14px;
+  color: #000;
+  border: 0px solid #000; 	 	
+}
+table.report {
+  font-size : 10pt;
+  color: #000;
+  border: 0px solid #000; 	 	
+}
+
+table.loan tr {text-align: left; }
+
+#item_list { font-size: 10pt; list-style: none; text-align: left; margin-top: 1px; font-weight: normal; }
+
+
+.condemnview {  width: 800px;  font-size: 10pt;  text-align: left; border: 1px solid #000; border-collapse: collapse; }
+.condemnview tr {  }
+.condemnview tr.alt {   }
+.condemnview th {  color: #000;   height: 20px; vertical-align: middle;}
+.condemnview td {  color: #000; }
+.condemnview td.alt {  background-color: #c9d7cf; }
+/*.condemnview a {  color : navy; }*/
+
+.condemnview.footer { text-align: right; }
+.condemnview.footer a{ color: #fff; }
+.condemnview.footer a:hover { color: #000; }
+.condemnview textarea {width: 200px; height: 50px;}
+
+.condemnview.return { width: 800px; }
+.condemnview.issue { width: 800px; }
+.condemnview.complete{ width: 800px; }
+
+.condemned_item_list {border: 1px solid #000; border-collapse: collapse  }
+.condemned_item_list th, .condemned_item_list td{border: 1px solid #000; }
+
+table#loanitemlist { border: 0px solid #000;}
+table#loanitemlist th,
+table#loanitemlist td { border-bottom: 1px solid #000;}
+
+table.request th, 
+table.issue th,
+table.approval th,
+table.issuance th,
+table.rejection th,
+table.issue th,
+table.process th { border-bottom: 1px solid #000;}
+
+#poweredby { 
+	color: #000; 
+	font-size: 12px; 
+	text-align: right;
+	font-style: italic;
+	}
+	
+.service_table { font-size : 10pt; text-align : left; min-width: 800px; border-spacing: 1px;}
+.service_table.detail { font-size : 10pt; text-align : left; min-width: 500px; border-spacing: 1px;}
+
+
+table.grid td, table.grid th { border-left: 1px dotted #999; border-bottom: 1px dotted #aaa; }
+table.grid td:first-child, table.grid th:first-child { border-left: 0; }
+table.checklist.grid td,
+table.checklist.grid th { border-left: 0; }
+
+table.itemlist thead tr th { text-align: left; height: 26px;}
+
+#fault_management { width: 100%;}
+.fault_table { font-size : 10pt; text-align : left;  width: 600px;}
+.fault_table td { color: #000; }
+.fault_table th { color : #000; height:20px; }
+
+
+.portal_history.fault_table { min-width: 100%;}
+.fault_table.itemlist { width: 100%;}

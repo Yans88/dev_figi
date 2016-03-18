@@ -1,0 +1,281 @@
+<?php
+
+function count_fault_request_by_status($status){
+    $result = 0;
+    $dept = defined('USERDEPT') ? USERDEPT : 0;
+    $query  = "SELECT count(fr.id_fault) 
+        FROM fault_report fr 
+        LEFT JOIN fault_category fc ON fr.fault_category = fc.id_category 
+        WHERE fault_status = '$status' AND id_department = $dept";
+    $rs = mysql_query($query);
+    if ($rs && (mysql_num_rows($rs)>0)){
+        $rec = mysql_fetch_row($rs);
+        $result = $rec[0];
+    }
+    return $result;
+}
+
+function query_fault_request_by_status($status, $start = 0, $limit = RECORD_PER_PAGE){
+	$dept = defined('USERDEPT') ? USERDEPT : 0;
+	$query  = "SELECT fr.id_fault, date_format(fault_date, '%d-%b-%Y %H:%i') as fault_date,  
+                 date_format(report_date, '%d-%b-%Y %H:%i') as report_date, loc.location_name fault_location, 
+                 user.full_name , category_name, fault_description, fault_status,
+                 date_format(rect.rectify_date, '%d-%b-%Y %H:%i') as rectify_date, 
+                 date_format(rect.completion_date, '%d-%b-%Y %H:%i') as completion_date,
+				 rectify_remark, completion_remark 
+                 FROM fault_report fr 
+                 LEFT JOIN user ON report_user = user.id_user 
+                 LEFT JOIN fault_category fc ON fr.fault_category = fc.id_category 
+                 LEFT JOIN fault_rectification rect ON rect.id_fault = fr.id_fault 
+                 LEFT JOIN location loc ON loc.id_location = fr.id_location 
+                 WHERE fault_status = '$status' AND fc.id_department = $dept ";
+	$query .= " ORDER BY report_date DESC LIMIT $start, $limit";
+	$rs = mysql_query($query);
+    //echo mysql_error();
+	return $rs;
+}
+
+function get_fault_request_by_status($status, $start = 0, $limit = RECORD_PER_PAGE){
+	$result = array();
+	$rs = query_fault_request_by_status($status, $start, $limit);
+	if ($rs && (mysql_num_rows($rs)>0))
+		while ($rec = mysql_fetch_assoc($rs))
+			$result[] = $rec;    
+	return $result;
+}
+
+function get_fault_request($id = 0){
+    $result = array();
+    $dtf = "%d-%b-%Y %H:%i";    
+	$query  = "SELECT fr.id_fault, date_format(fault_date, ' $dtf') as fault_date,  
+                 date_format(report_date, ' $dtf') as report_date, user.user_email, 
+                 user.full_name, category_name, fault_description, fault_status, 
+                 location_name fault_location, fc.id_department, user.contact_no,
+                 user.full_name reporter 
+                 FROM fault_report fr 
+                 LEFT JOIN user ON report_user = user.id_user 
+                 LEFT JOIN fault_category fc ON fr.fault_category = fc.id_category 
+                 LEFT JOIN location loc ON loc.id_location = fr.id_location 
+                 WHERE fr.id_fault = '$id' ";
+    $rs = mysql_query($query); 
+    if ($rs && (mysql_num_rows($rs)>0))
+        $result = mysql_fetch_assoc($rs);
+    return $result;
+}
+
+function get_fault_rectification($id = 0){
+    $result = array();
+    $dtf = "%d-%b-%Y %H:%i";    
+	$query  = "SELECT fr.*, date_format(rectify_date, '$dtf') as rectify_date,
+                date_format(completion_date, '$dtf') as completion_date 
+                 FROM fault_rectification fr 
+                 WHERE fr.id_fault = '$id' ";
+    $rs = mysql_query($query); 
+    if ($rs && (mysql_num_rows($rs)>0))
+        $result = mysql_fetch_assoc($rs);
+    return $result;
+}
+
+function send_submit_fault_report_notification($id = 0){
+    global $transaction_prefix, $configuration;
+    $config = $configuration['fault'];
+    
+    if ($config['enable_notification'] != 'true') return false;
+    $data = get_fault_request($id);
+    if (count($data) == 0) return false;
+  
+    $report_no = $transaction_prefix.$id;
+    $figi_url = FIGI_URL;
+    $data['report_no'] = $report_no;
+    $data['figi_url'] = $figi_url;
+    
+    if ($config['enable_notification_email'] == 'true'){
+        $emails = array($data['user_email']);
+        $email_rec = get_notification_emails($data['id_department'], $data['id_category'], 'fault');
+        foreach ($email_rec as $rec)
+            $emails[] = $rec['email'];
+        if (count($emails) > 0) {
+            $message = compose_message('messages/fault-report-submit.msg', $data);
+            $to = array_shift($emails);
+            $cc = implode(',', $emails);
+            $subject = 'Fault Report ('. $report_no . ') by ' . $data['full_name'];
+            //SendEmail(SYSTEM_EMAIL, $to, $subject, $message, $cc);
+            $id_msg = set_notification_message($configuration['global']['system_email'], $to, $subject, $message, $cc, 'fault', 'email');
+            process_notification($id_msg);        
+        }
+    }
+    
+    if ($config['enable_notification_sms'] == 'true'){
+        $message = null;
+        $mobile_rec = get_notification_mobiles($data['id_department'], $data['id_category'], 'fault'); // $data['id_category']
+        $mobiles = array_keys($mobile_rec);
+        if (!empty($data['contact_no']))
+            array_unshift($mobiles, $data['contact_no']);
+        $to = implode(',', $mobiles);
+        $message = compose_message('messages/fault-report-submit.sms', $data);
+        //SendSMS(SMS_SENDER, $to, $message);
+        $id_msg = set_notification_message($configuration['global']['sms_sender'], $to, null, $message, null, 'fault', 'sms');
+        process_notification($id_msg);
+        writelog('send_submit_fault_report_notification(): '. $configuration['global']['sms_sender'] . '|' . $to . '|' . $message .'|');
+    }
+    
+}
+
+function send_fault_report_completed_notification($id = 0){
+    global $transaction_prefix, $configuration;
+    $config = $configuration['fault'];
+    
+    if ($config['enable_notification'] != 'true') return false;
+    $data = get_fault_request($id);
+    if (count($data) == 0) return false;
+  
+    $report_no = $transaction_prefix.$id;
+    $figi_url = FIGI_URL;
+    $data['report_no'] = $report_no;
+    $data['figi_url'] = $figi_url;
+
+    $rectification = get_fault_rectification($id);
+    $data = array_merge($data, $rectification);
+    $users = get_user_list();
+    $rectified_by = (!empty($users[$rectification['rectified_by']])) ? $users[$rectification['rectified_by']] : null;
+    $completed_by = (!empty($users[$rectification['completed_by']])) ? $users[$rectification['completed_by']] : null;
+    $data['rectified_by'] = $rectified_by;
+    $data['completed_by'] = $completed_by;
+    
+    if ($config['enable_notification_email'] == 'true'){
+        $emails = array($data['user_email']);
+        $email_rec = get_notification_emails($data['id_department'], $data['id_category'], 'fault');
+        foreach ($email_rec as $rec)
+            $emails[] = $rec['email'];
+        if (count($emails) > 0) {
+            $message = compose_message('messages/fault-report-rectified.msg', $data);
+            $to = array_shift($emails);
+            $cc = implode(',', $emails);
+            $subject = 'Rectification of Reported Fault ('. $report_no . ') has been Completed';
+            //SendEmail(SYSTEM_EMAIL, $to, $subject, $message, $cc);
+            $id_msg = set_notification_message($configuration['global']['system_email'], $to, $subject, $message, $cc, 'fault', 'email');
+            process_notification($id_msg);        
+        }
+    }
+    
+    if ($config['enable_notification_sms'] == 'true'){
+        $message = null;
+        $mobile_rec = get_notification_mobiles($data['id_department'], $data['id_category'], 'fault');
+        $mobiles = array_keys($mobile_rec);
+        if (!empty($data['contact_no']))
+            array_unshift($mobiles, $data['contact_no']);
+        $to = implode(',', $mobiles);
+        $message = compose_message('messages/fault-report-rectified.sms', $data);
+        //SendSMS(SMS_SENDER, $to, $message);
+        $id_msg = set_notification_message($configuration['global']['sms_sender'], $to, null, $message, null, 'fault', 'sms');
+        process_notification($id_msg);
+        writelog('send_fault_report_completed_notification(): '. $configuration['global']['sms_sender'] . '|' . $to . '|' . $message);
+    }
+    
+}
+
+function count_fault_category($dept = 0){
+	$result = 0;
+	$query  = "SELECT count(*) FROM fault_category ";
+	if ($dept > 0)
+		$query .= ' WHERE id_department = ' . $dept;
+	$rs = mysql_query($query);
+	if ($rs && mysql_num_rows($rs)){
+		$rec = mysql_fetch_row($rs);
+		$result = $rec[0];
+	}
+	return $result;
+}
+
+function get_fault_categories($sort = 'asc', $start = 0, $limit = 10, $dept = 0){
+    $result = false;
+	$query  = "SELECT c.*, d.department_name 
+				FROM fault_category c 
+                LEFT JOIN department d ON c.id_department = d.id_department ";
+	if ($dept > 0)
+		$query .= ' WHERE c.id_department = ' . $dept;
+	$query .= " ORDER BY category_name $sort LIMIT $start,$limit ";
+	$result = mysql_query($query);
+    return $result;
+}
+
+function get_fault_category_list($department = 0, $swap = false, $lowercase = false) {
+	$data = array();
+	$query = 'SELECT id_category,category_name FROM fault_category ';
+	if ($department > 0) 
+		$query .= " WHERE id_department = $department ";
+	$query .= ' ORDER BY category_name ASC ';
+	$rs = mysql_query($query);
+	while ($rec = mysql_fetch_row($rs))
+        if ($swap){
+			if ($lowercase)
+				$rec[1] = strtolower($rec[1]);
+            $data[$rec[1]] =$rec[0];
+        } else
+            $data[$rec[0]] =$rec[1];
+	return $data;
+}
+
+function build_fault_category_combo($selected = -1, $department = 0, $onchange = null) {
+    
+	return build_combo('id_category', get_category_list($department), $selected, $onchange);
+}
+
+function get_machine_record_for_fault($id)
+{
+    $result = 0;
+	$query  = "SELECT mh.id_machine, id_item 
+                FROM machine_history mh 
+                LEFT machine_info mi ON mi.id_machine = mh.id_machine 
+                WHERE fault_reference = '$id'";
+	$rs = mysql_query($query);
+    if ($rs && mysql_num_rows($rs)>0){
+        $rec = mysql_fetch_assoc($rs);
+        $result = $rec['id_item'];
+    }
+    return $result;
+}
+
+function export_fault_request_status($status)
+{
+    $crlf = "\r\n";
+    ob_clean();
+    ini_set('max_execution_time', 60);
+    $today = date('dMY');
+	$fname = 'figi_'.strtolower($status)."_fault-$today.csv";
+    header("Content-type: text/x-comma-separated-values");
+    header("Content-Disposition: attachment; filename=$fname");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+	$transaction_prefix = TRX_PREFIX_FAULT;
+    $total = count_fault_request_by_status($status);
+    $rs = query_fault_request_by_status($status, 0, $total);
+	if ($rs) // && (mysql_num_rows($rs)>0)
+		switch(strtolower($status)){
+		case 'notified':
+			echo 'No,Date of Report,Reporter,Fault Date,Category,Description'.$crlf;
+				while ($rec = mysql_fetch_assoc($rs)){
+					echo "$transaction_prefix$rec[id_fault],$rec[report_date],$rec[full_name],$rec[fault_date],";
+					echo "$rec[category_name],$rec[fault_description]$crlf";
+				}
+			break;
+		case 'progress':
+			echo 'No,Date of Report,Reporter,Rectification Date,Category,Rectification Remark'.$crlf;
+				while ($rec = mysql_fetch_assoc($rs)){
+					echo "$transaction_prefix$rec[id_fault],$rec[report_date],$rec[full_name],$rec[rectify_date],";
+					echo "$rec[category_name],$rec[rectify_remark]$crlf";
+				}
+			break;
+		case 'completed':
+			echo 'No,Date of Report,Reporter,Rectification Date,Completion Date,Category,Completion Remark'.$crlf;
+				while ($rec = mysql_fetch_assoc($rs)){
+					echo "$transaction_prefix$rec[id_fault],$rec[report_date],$rec[full_name],$rec[rectify_date],";
+					echo "$rec[completion_date],$rec[category_name],$rec[completion_remark]$crlf";
+				}
+			break;
+	}
+    ob_end_flush();
+    exit;
+}
+
+?>

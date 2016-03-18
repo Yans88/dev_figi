@@ -1,0 +1,53 @@
+#tabset {
+    width: 700px; 
+}
+.buttonbox { 
+  list-style: none;
+  text-align: left; 
+  font-size: 18px; 
+  font-weight: bold;
+  border: 0 white solid;
+  padding-top: 2px;
+  padding-bottom : 2px;
+  padding-left: 0;
+  }
+.buttonbox li {
+  display: inline;
+  }
+ul.buttonbox > li > a {
+  background-color: #637b63; 
+  padding: 2px 15px 3px 15px;
+  margin: 0 -4px 0 0;
+  font-size : 12pt;
+  text-decoration: none;
+  }
+.buttonbox  a:hover {
+  background-color: #516151; 
+  }
+.buttonbox  a:active {
+  background-color: #fff; 
+  color: #000;
+  }
+.buttonbox  a.active {
+  background-color: #fff; 
+  color: #000;
+  }
+
+.tabset_content { 
+  width: 700px; 
+  border: 0 blue solid;
+  background-color: #fff;
+  margin-top: -18px;
+}
+.notify {
+	border: 2px maroon solid;
+	width : 400px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: navy;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #fff;
+	position: absolute;
+	padding: 10px;
+}

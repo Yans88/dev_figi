@@ -1,0 +1,10 @@
+@echo off
+
+:: executable php-cli location
+set phpcli=C:\wamp\bin\php\php5.3.8\php.exe 
+
+:: php script that run periodically
+set script=C:\wamp\www\afigi\payment\payment_alert.php
+
+:: run the script
+%phpcli% -q %script%

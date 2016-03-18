@@ -1,0 +1,19 @@
+mobile cart
+ - group of some notebooks (contains 20 notebooks) 
+ - available for loan if only if all item is available
+ - if one of member send for repair then the cart will not available for loan
+ - every dept has own carts
+ - if one of member scanned for loan, automatically load the others
+
+- dept admin can manage mobile carts
+ 
+
+mobile_cart 
+ id_cart
+ cart_name
+ cart_status
+ id_department
+ 
+mobile_cart_member
+ id_cart
+ id_item

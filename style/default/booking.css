@@ -1,0 +1,149 @@
+#calheader, #calfooter {
+}
+
+.column {
+	text-align: left;
+}
+#calcontainer {
+	width: auto;
+}
+#calleft {
+	width: 280px;           /* LC width */
+	float: left;
+	padding-right: 5px ;
+}
+
+#calright {
+	overflow: hidden;
+}
+
+#calfooter {
+	clear: both;
+}
+
+/*** IE Fix ***/
+* html #calleft {
+	left: 150px;            /* RC fullwidth */
+}
+#calheader h3 { margin: 5px 0; text-align: left }
+
+#resource_wrap { background: #fafafa; padding: 10px 10px; color: #000; border: 1px solid #184328; width: 800px; margin: 10px auto}
+#resource_wrap a {color: #0E2B19; }
+#wrap_header { border: 1px solid #aaa; border-radius: 3px; background: #eee; padding: 5px 10px; margin: 5px 0;}
+#wrap_title { font-weight: bold; font-size: 11pt; float: left}
+#resource { border-style: hidden; border-padding: 5px; width: 100%; margin:0 auto;}
+#resource td{ padding: 5px 5px; }
+#resource tr td:first-child { background: #eee; text-align: right; }
+#filelist { padding: 5px 5px; background: #D7EBE3; border: 1px solid #9CBA9B; margin: 0 auto}
+#filelist ul { padding: 5px 5px;  margin: 1px 5px;}
+#resource button#equipment { font-weight: bold; padding: 2px 10px}
+
+#equipment_list {min-width: 400px; min-height: 200px; }
+#equipment_list table { border: 1px solid #000; color: #000; border-spacing: 0; border-collapse: collapse}
+#equipment_list table td , #equipment_list table th{ padding: 2px 2px; border: 1px solid #000; }
+
+.filelist { border: 1px solid #000; padding: 5px 5px; color: #000; background: #eee; min-width: 300px; min-height: 4px; }
+
+.dayoff { background: #f5f5f5; }
+
+.agenda { font-size:12px;width: 100%; background: #B0DEAE; border-spacing: 0; empty-cells: show; border: 1px solid #1e5335;}
+.agenda th, .agenda td { text-align: center; }
+.agenda th { background: #ccc;  }
+.agenda tbody { background: #fff; font-size;12px;}
+.agenda td, .agenda th { padding: 5px 5px; color: #000; border-bottom: 1px solid #B0DEAE; min-height: 40px;font-size;12px;}
+
+#calnav button {padding: 2px 10px}
+.calwrap { padding: 3px 3px; background: #F7FFFF; border: 2px solid #0f3821;font-size;12px;}
+.calwrap #caltop {padding: 5px 10px;font-size;12px;}
+#period_label { padding: 5px 0; color: navy; font-weight: bold; float: left; }
+#book_periods_wrap { float: right; }
+#book_periods { font-weight: bold; font-size: 10pt}
+.bookinglist {
+	width:100%; 
+	margin:10px auto; 
+	background: #F7FFFF; 
+	color: #000;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.agenda .today {background:#FEFFD5;}
+.bookinglist.nav {padding: 2px 0 1px 0; text-align: center;}
+	
+.bookinglist a {color: navy;}
+.bookinglist th ,
+.bookinglist td {
+	border: 1px solid #F2F7F2;
+	padding: 2px; 
+}
+.bookinglist tr:hover {background: #E8FFF4}
+.bookinglist th { background: #CFE7DD} 
+.bookinglist-calendar {
+	width: auto; 
+	margin:10px auto; 
+	padding: 5px 10px;
+	background: #F7FFFF; 
+	color: #000;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+./*
+.bookinglist h3 {margin: 0 0; text-align: left; padding: 3px 0; border-spacing: 1px; color: #000}
+*/
+.widget {
+	margin: 0;
+	border: 1px solid #DDFFDD;
+    -webkit-border-radius: 3px 3px 0 0 ; 
+    -moz-border-radius: 3px 3px 0 0 ; 
+    border-radius: 3px 3px 0 0; 
+ }
+.widget-title {
+	margin: 0;
+	padding: 4px 4px; 
+	background: #DDFFDD;
+	color: #000;
+    -webkit-border-radius: 3px 3px 0 0 ; 
+    -moz-border-radius: 3px 3px 0 0 ; 
+    border-radius: 3px 3px 0 0; 
+}
+.widget-body {
+	padding: 5px 5px;
+}
+.bookinglist.widget {
+	width: auto;	
+	background: none;
+}
+.list ul{ 
+	list-style: circle;
+	margin: 2px;
+	padding-left: 5px;
+}
+.widget.list a {
+	font-size: 10pt;
+}
+
+#resource .info_per_period { padding: 4px; border-collapse: separate; border-spacing: 1px;}
+#resource .info_per_period tr { background: #D7EBE3;  }
+#resource .info_per_period td { padding: 4px; border-spacing: 1px; background: #f1f1f1 }
+
+.tbl_period_list {
+	border-collapse: collapse;
+	border: 1px solid #9CBA9B;
+	width: 100%;
+}
+.tbl_period_list .head {
+	background: #CFE7DD;
+}
+.tbl_period_list td ,
+.tbl_period_list th {
+	padding: 2px 4px;
+	border-bottom: 1px solid #CFE7DD;
+	text-align: center;
+}
+.tbl_period_list td { text-align: justify; }
+
+table.bookable-facility { width: 100%; border-collapse: collapse; }
+table.bookable-facility tr {  background-color: #EAEAFF; }
+table.bookable-facility tr.alt {  background-color: #EAEAFF; }
+table.bookable-facility tr:hover {background: #d5e3db;  }
+
+

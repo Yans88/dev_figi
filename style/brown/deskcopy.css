@@ -1,0 +1,76 @@
+@font-face { font-family: 'Tw Cen MT'; src: url('../../style/default/TCM.ttf'); }
+@font-face { font-family: 'Tw Cen MT Bold'; font-weight: bold; src: url('../../style/default/TCMB.ttf'); }
+@font-face { font-family: 'Tw Cen MT Italic'; text-decoration: italic; src: url('../../style/default/TCMI.ttf'); }
+
+body { background-color: #775F55; color: #fff; }
+#contentcenter { font-size: 16px; font-family: arial, verdana, tahoma, serif; font-weight: bold; }
+#header { text-align: left; }
+#title { font-size: 24px;}
+#cmdlabel { font-size: 20px;}
+
+.modbutton { 
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    color: #000;
+    background-color: #968C8C;
+    border-radius: 5px 10;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-box-shadow: 1px 3px 2px #000 ;
+    -webkit-box-shadow: 1px 1px 2px #000 ;
+    box-shadow: 1px 1px 2px #000 ;
+}    
+.modbutton:hover { 
+    color: #fff; 
+    background-color: #000; 
+    -moz-box-shadow: 1px 1px 2px #fff ;
+    -webkit-box-shadow: 1px 1px 2px #fff ;
+    box-shadow: 1px 1px 2px #fff ;
+    cursor: pointer;
+}
+
+.modbutton.return {
+    color: #fff;
+    background-color: #639890;
+}
+.modbutton.return:hover {
+    background-color: #21413c;
+}
+.underline { text-decoration: underline; }
+
+#form { position: relative; min-height: 200px; padding-top: 20px;}
+.inputbox {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: 1px solid #34a;
+    background-color: white;
+    -moz-box-shadow: 3px 3px 15px #bbb;
+    -webkit-box-shadow: 3px 3px 15px #bbb;
+    box-shadow: 3px 3px 15px #bbb;
+}
+
+#note { position: relative; }
+#footer { 
+    width: 100%;
+    background-color: #fff; 
+    height: 60px; 
+    padding: 10px 0 0 0; 
+    position: absolute;
+}
+#leftfoot { float: left; width: 21%; height: 100%; background-color: #DD8047; padding-left: 10px;}
+#datetime { text-align: left; font-size: 18px; font-family: 'Tw Cen MT'; }
+#rightfoot { float: right; width: 77%; height: 100%; background-color: #94B6D2;  }
+.buttonfoot .button { display: inline-block; padding-top: 7px;  }
+	
+.deskcopy_item_list { min-width: 600px; font-size: 12pt; font-family: 'Tw Cen MT',arial, serif;  }
+.deskcopy_item_list th { font-size: 14pt; font-family: 'Tw Cen MT Bold', arial, serif; text-align: left; }
+.deskcopy_item_list td { border-bottom: 1px dotted black;}
+.deskcopy_item_list a.button { text-decoration: none; color: #f63; padding: 1px 4px 3px 4px; font-family: Tw Cen MT Bold; font-size: 14pt;}
+.deskcopy_item_list a.button:hover { color: #fff; }
+
+#itemspace { min-height: 80px; }

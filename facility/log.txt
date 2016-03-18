@@ -1,0 +1,1800 @@
+new event. start -> 2012-09-10T17:00:00.000Z
+new event. end -> 2012-09-10T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> test
+new event. start_xtime -> 1347296400
+new event. start_time -> 2012-09-11 00:00:00
+new event. finish_xtime -> 1347296400
+new event. finish_time -> 2012-09-11 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, , 1347296400, 1347296400, 'NONE', 1, 
+                    1347296400, 0, 'test', 'BOOK', unix_timestamp())
+query. 1 -> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 1347296400, 1347296400, 'NONE', 1, 
+                    1347296400, 0, 'test',' at line 3
+query. 2 -> 0
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+new event. start -> 2012-09-11T17:00:00.000Z
+new event. end -> 2012-09-11T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> ddsda
+new event. start_xtime -> 1347382800
+new event. start_time -> 2012-09-12 00:00:00
+new event. finish_xtime -> 1347382800
+new event. finish_time -> 2012-09-12 00:00:00
+new event. id_facility -> 0
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 0, 1347382800, 1347382800, 'NONE', 1, 
+                    1347382800, 0, 'ddsda', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 5
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+new event. start -> 2012-09-12T17:00:00.000Z
+new event. end -> 2012-09-12T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fughjgdfdg
+new event. start_xtime -> 1347469200
+new event. start_time -> 2012-09-13 00:00:00
+new event. finish_xtime -> 1347469200
+new event. finish_time -> 2012-09-13 00:00:00
+new event. id_facility -> 0
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 0, 1347469200, 1347469200, 'NONE', 1, 
+                    1347469200, 0, 'fughjgdfdg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 6
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-03T17:00:00.000Z
+new event. end -> 2012-09-03T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> dsdsd
+new event. id_facility -> 0
+new event. start_xtime -> 1346691600
+new event. start_time -> 2012-09-04 00:00:00
+new event. finish_xtime -> 1346691600
+new event. finish_time -> 2012-09-04 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 0, 1346691600, 1346691600, 'NONE', 1, 
+                    1346691600, 0, 'dsdsd', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 7
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+new event. start -> 2012-09-15T17:00:00.000Z
+new event. end -> 2012-09-15T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fhfghfg
+new event. id_facility -> 1
+new event. start_xtime -> 1347728400
+new event. start_time -> 2012-09-16 00:00:00
+new event. finish_xtime -> 1347728400
+new event. finish_time -> 2012-09-16 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347728400, 1347728400, 'NONE', 1, 
+                    1347728400, 0, 'fhfghfg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 8
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 4
+new event. start -> 2012-09-04T17:00:00.000Z
+new event. end -> 2012-09-04T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> hffh
+new event. id_facility -> 4
+new event. start_xtime -> 1346778000
+new event. start_time -> 2012-09-05 00:00:00
+new event. finish_xtime -> 1346778000
+new event. finish_time -> 2012-09-05 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 4, 1346778000, 1346778000, 'NONE', 1, 
+                    1346778000, 0, 'hffh', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 9
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 4
+get. id_facility -> 1
+get. id_facility -> 2
+new event. start -> 2012-09-10T17:00:00.000Z
+new event. end -> 2012-09-13T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> jgkkghkfj
+new event. id_facility -> 2
+new event. start_xtime -> 1347296400
+new event. start_time -> 2012-09-11 00:00:00
+new event. finish_xtime -> 1347555600
+new event. finish_time -> 2012-09-14 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 2, 1347296400, 1347555600, 'NONE', 1, 
+                    1347555600, 0, 'jgkkghkfj', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 10
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 2
+get. id_facility -> 1
+new event. start -> 2012-09-03T17:00:00.000Z
+new event. end -> 2012-09-03T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> coba
+new event. id_facility -> 1
+new event. start_xtime -> 1346691600
+new event. start_time -> 2012-09-04 00:00:00
+new event. finish_xtime -> 1346691600
+new event. finish_time -> 2012-09-04 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1346691600, 1346691600, 'NONE', 1, 
+                    1346691600, 0, 'coba', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 1
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+update event. id -> 1-1346691600
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> coba
+update event. location -> LAB 1
+update event. start -> 2012-09-18T17:00:00.000Z
+update event. end -> 2012-09-18T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347987600
+update event. start_time -> 2012-09-19 00:00:00
+update event. finish_xtime -> 1347987600
+update event. finish_time -> 2012-09-19 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1346691600
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1347987600', end = '1347987600' 
+                        WHERE id_book=1 && start = 1346691600
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-09T17:00:00.000Z
+new event. end -> 2012-09-09T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> tesfdsf
+new event. id_facility -> 1
+new event. start_xtime -> 1347210000
+new event. start_time -> 2012-09-10 00:00:00
+new event. finish_xtime -> 1347210000
+new event. finish_time -> 2012-09-10 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347210000, 1347210000, 'NONE', 1, 
+                    1347210000, 0, 'tesfdsf', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 1
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+update event. id -> 1-1347210000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> tesfdsf
+update event. location -> LAB 1
+update event. start -> 2012-09-03T17:00:00.000Z
+update event. end -> 2012-09-03T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346691600
+update event. start_time -> 2012-09-04 00:00:00
+update event. finish_xtime -> 1346691600
+update event. finish_time -> 2012-09-04 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347210000
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1346691600', end = '1346691600' 
+                        WHERE id_book=1 && start = 1347210000
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-11T17:00:00.000Z
+new event. end -> 2012-09-11T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> jjjjjjjjjjj
+new event. id_facility -> 1
+new event. start_xtime -> 1347382800
+new event. start_time -> 2012-09-12 00:00:00
+new event. finish_xtime -> 1347382800
+new event. finish_time -> 2012-09-12 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347382800, 1347382800, 'NONE', 1, 
+                    1347382800, 0, 'jjjjjjjjjjj', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 2
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-12T17:00:00.000Z
+new event. end -> 2012-09-12T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> gfdg
+new event. id_facility -> 1
+new event. start_xtime -> 1347469200
+new event. start_time -> 2012-09-13 00:00:00
+new event. finish_xtime -> 1347469200
+new event. finish_time -> 2012-09-13 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347469200, 1347469200, 'NONE', 1, 
+                    1347469200, 0, 'gfdg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 3
+get. id_facility -> 1
+new event. start -> 2012-09-05T17:00:00.000Z
+new event. end -> 2012-09-05T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fdgfdgf
+new event. id_facility -> 1
+new event. start_xtime -> 1346864400
+new event. start_time -> 2012-09-06 00:00:00
+new event. finish_xtime -> 1346864400
+new event. finish_time -> 2012-09-06 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1346864400, 1346864400, 'NONE', 1, 
+                    1346864400, 0, 'fdgfdgf', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 4
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+update event. id -> 4-1346864400
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> fdgfdgf
+update event. location -> LAB 1
+update event. start -> 2012-09-19T17:00:00.000Z
+update event. end -> 2012-09-19T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1348074000
+update event. start_time -> 2012-09-20 00:00:00
+update event. finish_xtime -> 1348074000
+update event. finish_time -> 2012-09-20 00:00:00
+update event. id_book -> 4
+update event. cur_date -> 1346864400
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1348074000', end = '1348074000' 
+                        WHERE id_book=4 && start = 1346864400
+query. 1 -> 
+query. 2 -> 4
+update event. id -> 4-1346864400
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> fdgfdgf
+update event. location -> LAB 1
+update event. start -> 2012-09-17T17:00:00.000Z
+update event. end -> 2012-09-17T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347901200
+update event. start_time -> 2012-09-18 00:00:00
+update event. finish_xtime -> 1347901200
+update event. finish_time -> 2012-09-18 00:00:00
+update event. id_book -> 4
+update event. cur_date -> 1346864400
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1347901200', end = '1347901200' 
+                        WHERE id_book=4 && start = 1346864400
+query. 1 -> 
+query. 2 -> 4
+get. id_facility -> 1
+get. id_facility -> 1
+update event. id -> 3-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> gfdg
+update event. location -> LAB 1
+update event. start -> 2012-09-13T17:00:00.000Z
+update event. end -> 2012-09-13T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347555600
+update event. start_time -> 2012-09-14 00:00:00
+update event. finish_xtime -> 1347555600
+update event. finish_time -> 2012-09-14 00:00:00
+update event. id_book -> 3
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1347555600', end = '1347555600' 
+                        WHERE id_book=3 && start = 1347469200
+query. 1 -> 
+query. 2 -> 3
+get. id_facility -> 1
+update event. id -> 3-1347555600
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> gfdg
+update event. location -> LAB 1
+update event. start -> 2012-09-06T17:00:00.000Z
+update event. end -> 2012-09-06T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346950800
+update event. start_time -> 2012-09-07 00:00:00
+update event. finish_xtime -> 1346950800
+update event. finish_time -> 2012-09-07 00:00:00
+update event. id_book -> 3
+update event. cur_date -> 1347555600
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1346950800', end = '1346950800' 
+                        WHERE id_book=3 && start = 1347555600
+query. 1 -> 
+query. 2 -> 3
+get. id_facility -> 1
+update event. id -> 3-1346950800
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> gfdg
+update event. location -> LAB 1
+update event. start -> 2012-09-13T17:00:00.000Z
+update event. end -> 2012-09-13T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347555600
+update event. start_time -> 2012-09-14 00:00:00
+update event. finish_xtime -> 1347555600
+update event. finish_time -> 2012-09-14 00:00:00
+update event. id_book -> 3
+update event. cur_date -> 1346950800
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1347555600', end = '1347555600' 
+                        WHERE id_book=3 && start = 1346950800
+query. 1 -> 
+query. 2 -> 3
+new event. start -> 2012-09-01T17:00:00.000Z
+new event. end -> 2012-09-01T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> ddgf
+new event. id_facility -> 1
+new event. start_xtime -> 1346518800
+new event. start_time -> 2012-09-02 00:00:00
+new event. finish_xtime -> 1346518800
+new event. finish_time -> 2012-09-02 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1346518800, 1346518800, 'NONE', 1, 
+                    1346518800, 0, 'ddgf', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 5
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+new event. start -> 2012-09-04T17:00:00.000Z
+new event. end -> 2012-09-04T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> guut
+new event. id_facility -> 1
+new event. start_xtime -> 1346778000
+new event. start_time -> 2012-09-05 00:00:00
+new event. finish_xtime -> 1346778000
+new event. finish_time -> 2012-09-05 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1346778000, 1346778000, 'NONE', 1, 
+                    1346778000, 0, 'guut', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 6
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-11T17:00:00.000Z
+new event. end -> 2012-09-11T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fgfg
+new event. id_facility -> 1
+new event. start_xtime -> 1347382800
+new event. start_time -> 2012-09-12 00:00:00
+new event. finish_xtime -> 1347382800
+new event. finish_time -> 2012-09-12 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347382800, 1347382800, 'NONE', 1, 
+                    1347382800, 0, 'fgfg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-12T17:00:00.000Z
+new event. end -> 2012-09-12T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> ghghg
+new event. id_facility -> 1
+new event. start_xtime -> 1347469200
+new event. start_time -> 2012-09-13 00:00:00
+new event. finish_xtime -> 1347469200
+new event. finish_time -> 2012-09-13 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347469200, 1347469200, 'NONE', 1, 
+                    1347469200, 0, 'ghghg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 2
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-18T17:00:00.000Z
+new event. end -> 2012-09-18T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fgdg
+new event. id_facility -> 1
+new event. start_xtime -> 1347987600
+new event. start_time -> 2012-09-19 00:00:00
+new event. finish_xtime -> 1347987600
+new event. finish_time -> 2012-09-19 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347987600, 1347987600, 'NONE', 1, 
+                    1347987600, 0, 'fgdg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 3
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-04T17:00:00.000Z
+new event. end -> 2012-09-04T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> dfdsgdfg
+new event. id_facility -> 1
+new event. start_xtime -> 1346778000
+new event. start_time -> 2012-09-05 00:00:00
+new event. finish_xtime -> 1346778000
+new event. finish_time -> 2012-09-05 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1346778000, 1346778000, 'NONE', 1, 
+                    1346778000, 0, 'dfdsgdfg', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 1
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+update event. id -> 1-1346778000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> dfdsgdfg
+update event. location -> LAB 1
+update event. start -> 2012-09-09T17:00:00.000Z
+update event. end -> 2012-09-09T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347210000
+update event. start_time -> 2012-09-10 00:00:00
+update event. finish_xtime -> 1347210000
+update event. finish_time -> 2012-09-10 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1346778000
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1347210000', end = '1347210000' 
+                        WHERE id_book=1 && start = 1346778000
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1346778000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> dfdsgdfg
+update event. location -> LAB 1
+update event. start -> 2012-09-12T17:00:00.000Z
+update event. end -> 2012-09-12T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347469200
+update event. start_time -> 2012-09-13 00:00:00
+update event. finish_xtime -> 1347469200
+update event. finish_time -> 2012-09-13 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1346778000
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1347469200', dt_end = '1347469200', dt_last = '1347469200', 
+                        purpose = 'dfdsgdfg',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1346778000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> dfdsgdfg
+update event. location -> LAB 1
+update event. start -> 2012-09-06T17:00:00.000Z
+update event. end -> 2012-09-06T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346950800
+update event. start_time -> 2012-09-07 00:00:00
+update event. finish_xtime -> 1346950800
+update event. finish_time -> 2012-09-07 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1346778000
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346950800', dt_end = '1346950800', dt_last = '1346950800', 
+                        purpose = 'dfdsgdfg',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-10T17:00:00.000Z
+new event. end -> 2012-09-10T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> testst
+new event. id_facility -> 1
+new event. start_xtime -> 1347296400
+new event. start_time -> 2012-09-11 00:00:00
+new event. finish_xtime -> 1347296400
+new event. finish_time -> 2012-09-11 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347296400, 1347296400, 'NONE', 1, 
+                    1347296400, 0, 'testst', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 1
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+update event. id -> 1-1347296400
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-11T17:00:00.000Z
+update event. end -> 2012-09-11T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347382800
+update event. start_time -> 2012-09-12 00:00:00
+update event. finish_xtime -> 1347382800
+update event. finish_time -> 2012-09-12 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347296400
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1347382800', dt_end = '1347382800', dt_last = '1347382800', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1347296400
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-03T17:00:00.000Z
+update event. end -> 2012-09-03T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346691600
+update event. start_time -> 2012-09-04 00:00:00
+update event. finish_xtime -> 1346691600
+update event. finish_time -> 2012-09-04 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347296400
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346691600', dt_end = '1346691600', dt_last = '1346691600', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1347382800
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-17T17:00:00.000Z
+update event. end -> 2012-09-17T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347901200
+update event. start_time -> 2012-09-18 00:00:00
+update event. finish_xtime -> 1347901200
+update event. finish_time -> 2012-09-18 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347382800
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1347901200', dt_end = '1347901200', dt_last = '1347901200', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1347382800
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-12T17:00:00.000Z
+update event. end -> 2012-09-12T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347469200
+update event. start_time -> 2012-09-13 00:00:00
+update event. finish_xtime -> 1347469200
+update event. finish_time -> 2012-09-13 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347382800
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1347469200', dt_end = '1347469200', dt_last = '1347469200', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+update event. id -> 1-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-04T17:00:00.000Z
+update event. end -> 2012-09-04T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346778000
+update event. start_time -> 2012-09-05 00:00:00
+update event. finish_xtime -> 1346778000
+update event. finish_time -> 2012-09-05 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346778000', dt_end = '1346778000', dt_last = '1346778000', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+update event. id -> 1-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-03T17:00:00.000Z
+update event. end -> 2012-09-03T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346691600
+update event. start_time -> 2012-09-04 00:00:00
+update event. finish_xtime -> 1346691600
+update event. finish_time -> 2012-09-04 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346691600', dt_end = '1346691600', dt_last = '1346691600', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+update event. id -> 1-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> testst
+update event. location -> LAB 1
+update event. start -> 2012-09-03T17:00:00.000Z
+update event. end -> 2012-09-05T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346691600
+update event. start_time -> 2012-09-04 00:00:00
+update event. finish_xtime -> 1346864400
+update event. finish_time -> 2012-09-06 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346691600', dt_end = '1346864400', dt_last = '1346864400', 
+                        purpose = 'testst',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+update event. id -> 1-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> TEot
+update event. location -> LAB 1
+update event. start -> 2012-09-03T17:00:00.000Z
+update event. end -> 2012-09-05T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346691600
+update event. start_time -> 2012-09-04 00:00:00
+update event. finish_xtime -> 1346864400
+update event. finish_time -> 2012-09-06 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346691600', dt_end = '1346864400', dt_last = '1346864400', 
+                        purpose = 'TEot',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+update event. id -> 1-1347469200
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> TEot
+update event. location -> LAB 1
+update event. start -> 2012-09-04T17:00:00.000Z
+update event. end -> 2012-09-06T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1346778000
+update event. start_time -> 2012-09-05 00:00:00
+update event. finish_xtime -> 1346950800
+update event. finish_time -> 2012-09-07 00:00:00
+update event. id_book -> 1
+update event. cur_date -> 1347469200
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1346778000', dt_end = '1346950800', dt_last = '1346950800', 
+                        purpose = 'TEot',  mdate = now() 
+                        WHERE id_book=1
+query. 1 -> 
+query. 2 -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 1
+new event. start -> 2012-09-18T17:00:00.000Z
+new event. end -> 2012-09-18T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fsfsdfdf
+new event. id_facility -> 1
+new event. start_xtime -> 1347987600
+new event. start_time -> 2012-09-19 00:00:00
+new event. finish_xtime -> 1347987600
+new event. finish_time -> 2012-09-19 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347987600, 1347987600, 'NONE', 1, 
+                    1347987600, 0, 'fsfsdfdf', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 2
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+update event. id -> 2-1347987600
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> fsfsdfdf
+update event. location -> LAB 1
+update event. start -> 2012-09-17T17:00:00.000Z
+update event. end -> 2012-09-17T17:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1347901200
+update event. start_time -> 2012-09-18 00:00:00
+update event. finish_xtime -> 1347901200
+update event. finish_time -> 2012-09-18 00:00:00
+update event. id_book -> 2
+update event. cur_date -> 1347987600
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1347901200', dt_end = '1347901200', dt_last = '1347901200', 
+                        purpose = 'fsfsdfdf',  mdate = now() 
+                        WHERE id_book=2
+query. 1 -> 
+query. 2 -> 2
+get. id_facility -> 1
+new event. start -> 2012-09-12T17:00:00.000Z
+new event. end -> 2012-09-12T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> fggjjhkjkj
+new event. id_facility -> 1
+new event. start_xtime -> 1347469200
+new event. start_time -> 2012-09-13 00:00:00
+new event. finish_xtime -> 1347469200
+new event. finish_time -> 2012-09-13 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347469200, 1347469200, 'NONE', 1, 
+                    1347469200, 0, 'fggjjhkjkj', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 3
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+new event. start -> 2012-09-19T17:00:00.000Z
+new event. end -> 2012-09-27T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> xvv vbcx
+new event. id_facility -> 1
+new event. start_xtime -> 1348074000
+new event. start_time -> 2012-09-20 00:00:00
+new event. finish_xtime -> 1348765200
+new event. finish_time -> 2012-09-28 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1348074000, 1348765200, 'NONE', 1, 
+                    1348765200, 0, 'xvv vbcx', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 4
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-08T17:00:00.000Z
+new event. end -> 1347209999999
+new event. allDay -> 1
+new event. title -> test 10
+new event. id_facility -> 1
+new event. start_xtime -> 1347123600
+new event. start_time -> 2012-09-09 00:00:00
+new event. finish_xtime -> 
+new event. finish_time -> 1970-01-01 07:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347123600, , 'NONE', 1, 
+                    , 0, 'test 10', 'BOOK', unix_timestamp())
+query. 1 -> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 'NONE', 1, 
+                    , 0, 'test 10', 'BOOK', unix_timestamp())' at line 3
+query. 2 -> 0
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-09T17:00:00.000Z
+new event. end -> 1347296399999
+new event. allDay -> 1
+new event. title -> addad
+new event. id_facility -> 1
+new event. start_xtime -> 1347210000
+new event. start_time -> 2012-09-10 00:00:00
+new event. finish_xtime -> 
+new event. finish_time -> 1970-01-01 07:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347210000, , 'NONE', 1, 
+                    , 0, 'addad', 'BOOK', unix_timestamp())
+query. 1 -> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 'NONE', 1, 
+                    , 0, 'addad', 'BOOK', unix_timestamp())' at line 3
+query. 2 -> 0
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+get. id_facility -> 1
+new event. start -> 2012-09-09T17:00:00.000Z
+new event. end -> 1347296399999
+new event. allDay -> 1
+new event. title -> dfdfdfdf
+new event. id_facility -> 1
+new event. start_xtime -> 1347210000
+new event. start_time -> 2012-09-10 00:00:00
+new event. finish_xtime -> 
+new event. finish_time -> 1970-01-01 07:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 1, 1347210000, , 'NONE', 1, 
+                    , 0, 'dfdfdfdf', 'BOOK', unix_timestamp())
+query. 1 -> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 'NONE', 1, 
+                    , 0, 'dfdfdfdf', 'BOOK', unix_timestamp())' at line 3
+query. 2 -> 0
+get. start -> 1345914000
+get. end -> 1349542800
+get. id_facility -> 1
+update event. id -> 4-1348074000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> xvv vbcx
+update event. location -> LAB 1
+update event. start -> 2012-09-19T21:00:00.000Z
+update event. end -> 2012-09-27T21:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1348088400
+update event. start_time -> 2012-09-20 04:00:00
+update event. finish_xtime -> 1348779600
+update event. finish_time -> 2012-09-28 04:00:00
+update event. id_book -> 4
+update event. cur_date -> 1348074000
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1348088400', dt_end = '1348779600', dt_last = '1348779600', 
+                        purpose = 'xvv vbcx',  mdate = now() 
+                        WHERE id_book=4
+query. 1 -> 
+query. 2 -> 4
+update event. id -> 4-1348074000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> xvv vbcx
+update event. location -> LAB 1
+update event. start -> 2012-09-19T21:00:00.000Z
+update event. end -> 2012-09-27T20:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1348088400
+update event. start_time -> 2012-09-20 04:00:00
+update event. finish_xtime -> 1348776000
+update event. finish_time -> 2012-09-28 03:00:00
+update event. id_book -> 4
+update event. cur_date -> 1348074000
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1348088400', dt_end = '1348776000', dt_last = '1348776000', 
+                        purpose = 'xvv vbcx',  mdate = now() 
+                        WHERE id_book=4
+query. 1 -> 
+query. 2 -> 4
+update event. id -> 4-1348074000
+update event. allDay -> 
+update event. repeated -> 
+update event. title -> xvv vbcx
+update event. location -> LAB 1
+update event. start -> 2012-09-19T21:00:00.000Z
+update event. end -> 2012-09-27T18:00:00.000Z
+update event. owner -> 120
+update event. id_facility -> 1
+update event. start_xtime -> 1348088400
+update event. start_time -> 2012-09-20 04:00:00
+update event. finish_xtime -> 1348768800
+update event. finish_time -> 2012-09-28 01:00:00
+update event. id_book -> 4
+update event. cur_date -> 1348074000
+query. 0 -> UPDATE facility_book SET 
+                        dt_start = '1348088400', dt_end = '1348768800', dt_last = '1348768800', 
+                        purpose = 'xvv vbcx',  mdate = now() 
+                        WHERE id_book=4
+query. 1 -> 
+query. 2 -> 4
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 4
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 4
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+get. id_facility -> undefined
+new event. start -> 2012-10-25T17:00:00.000Z
+new event. end -> 2012-10-25T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> coba aja
+new event. start_xtime -> 1351184400
+new event. start_time -> 2012-10-26 00:00:00
+new event. finish_xtime -> 1351184400
+new event. finish_time -> 2012-10-26 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (153, , 1351184400, 1351184400, 'NONE', 1, 
+                    1351184400, 0, 'coba aja', 'BOOK', unix_timestamp())
+query. 1 -> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 1351184400, 1351184400, 'NONE', 1, 
+                    1351184400, 0, 'coba a' at line 3
+query. 2 -> 0
+get. start -> 1348938000
+get. end -> 1352566800
+get. id_facility -> undefined
+get. id_facility -> 5
+get. id_facility -> 5
+new event. start -> 2012-10-25T17:00:00.000Z
+new event. end -> 2012-10-25T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> me
+new event. id_facility -> 5
+new event. start_xtime -> 1351184400
+new event. start_time -> 2012-10-26 00:00:00
+new event. finish_xtime -> 1351184400
+new event. finish_time -> 2012-10-26 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 5, 1351184400, 1351184400, 'NONE', 1, 
+                    1351184400, 0, 'me', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 9
+get. start -> 1348938000
+get. end -> 1352566800
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+new event. start -> 2012-10-26T17:00:00.000Z
+new event. end -> 2012-10-26T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> tas langsung
+new event. id_facility -> 5
+new event. start_xtime -> 1351270800
+new event. start_time -> 2012-10-27 00:00:00
+new event. finish_xtime -> 1351270800
+new event. finish_time -> 2012-10-27 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (120, 5, 1351270800, 1351270800, 'NONE', 1, 
+                    1351270800, 0, 'tas langsung', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 10
+get. start -> 1348938000
+get. end -> 1352566800
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+new event. start -> 2012-10-29T17:00:00.000Z
+new event. end -> 2012-10-29T17:00:00.000Z
+new event. allDay -> 1
+new event. title -> teacher ganti
+new event. id_facility -> 5
+new event. start_xtime -> 1351530000
+new event. start_time -> 2012-10-30 00:00:00
+new event. finish_xtime -> 1351530000
+new event. finish_time -> 2012-10-30 00:00:00
+query. 0 -> INSERT INTO facility_book(id_user, id_facility, dt_start, dt_end, 
+                    repetition, `interval`, dt_last, wd_start, purpose, status, book_date)
+                    VALUES (153, 5, 1351530000, 1351530000, 'NONE', 1, 
+                    1351530000, 0, 'teacher ganti', 'BOOK', unix_timestamp())
+query. 1 -> 
+query. 2 -> 11
+get. start -> 1348938000
+get. end -> 1352566800
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 4
+get. id_facility -> 4
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 4
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 4
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 4
+get. id_facility -> 5
+update event. id -> 22-1352793600
+update event. allDay -> 
+update event. repeated -> 1
+update event. title -> every 3 days
+update event. location -> 1 tambahan
+update event. start -> 2012-11-14T08:00:00.000Z
+update event. end -> 2012-11-14T08:00:00.000Z
+update event. owner -> 120
+update event. full_name -> elbas admin ict
+update event. id_facility -> 5
+update event. start_xtime -> 1352880000
+update event. start_time -> 2012-11-14 15:00:00
+update event. finish_xtime -> 1352880000
+update event. finish_time -> 2012-11-14 15:00:00
+update event. id_book -> 22
+update event. cur_date -> 1352793600
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1352880000', end = '1352880000' 
+                        WHERE id_book=22 && start = 1352793600
+query. 1 -> 
+query. 2 -> 22
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 1
+get. id_facility -> 5
+get. id_facility -> 2
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+update event. id -> 23-1352365200
+update event. allDay -> 
+update event. repeated -> 1
+update event. title -> terus test
+update event. location -> 1 tambahan
+update event. start -> 2012-11-06T09:00:00.000Z
+update event. end -> 2012-11-06T09:00:00.000Z
+update event. owner -> 120
+update event. full_name -> elbas admin ict
+update event. id_facility -> 5
+update event. start_xtime -> 1352192400
+update event. start_time -> 2012-11-06 16:00:00
+update event. finish_xtime -> 1352192400
+update event. finish_time -> 2012-11-06 16:00:00
+update event. id_book -> 23
+update event. cur_date -> 1352365200
+query. 0 -> UPDATE facility_book_instances SET 
+                        start = '1352192400', end = '1352192400' 
+                        WHERE id_book=23 && start = 1352365200
+query. 1 -> 
+query. 2 -> 23
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5
+get. id_facility -> 5

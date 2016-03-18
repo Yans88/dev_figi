@@ -1,0 +1,5 @@
+set php="C:\wamp\app\php\php.exe"
+set script="C:\wamp\www\figi\admin\periodic_backup.php"
+echo 'check backup schedule....'
+%php% %script%
+

@@ -1,0 +1,5 @@
+[24-Jun-2015 12:58:46 Asia/Singapore] SELECT id_student, full_name, class FROM students where class like '%1%' ORDER BY full_name ASC
+[24-Jun-2015 13:00:09 Asia/Singapore] SELECT id_student, full_name, class FROM students where full_name like '%t%' ORDER BY full_name ASC
+[24-Jun-2015 13:00:33 Asia/Singapore] SELECT id_student, full_name, class FROM students where full_name like '%j%' ORDER BY full_name ASC
+[24-Jun-2015 13:00:37 Asia/Singapore] SELECT id_student, full_name, class FROM students where full_name like '%r%' ORDER BY full_name ASC
+[14-Jul-2015 14:13:47 Asia/Singapore] SELECT id_student, full_name, class FROM students where full_name like '%f%' ORDER BY full_name ASC

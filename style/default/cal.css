@@ -1,0 +1,126 @@
+.calendar {
+	width : 100%;
+	border-collapse: collapse;
+	background-color: #062312;
+	border: 1px solid grey;
+	color: #000;
+}
+.calendar td {
+	width : 13%;
+	height: 100px; 
+	border: 1px solid grey;
+	font-size: 14pt;
+	padding: 5px 5px 5px 5px;
+}
+.calendar th.dayname {
+	border: 1px solid black;
+	background-color: #ddd;
+}
+.calendar a {
+	font-size: 10pt;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px dotted #B9CAFF;
+}
+.calendar div.daynum {
+	clear: both;
+	float: left;
+	width: 20px;
+}
+.calendar div.plus {
+	clear: right;
+	float: right;
+	font-size: 16pt;
+	margin-right: 10px;
+	width: 10px;
+}
+.calendar div.plus a{
+	font-weight: bold;
+	font-size: 14pt;
+	display: block;
+	width: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: -2px;
+}
+.calendar div.plus a:hover{
+/*
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+*/
+}
+.calendar div.desc {
+	position: absolute;
+	display: none;
+	border: 1px solid  #103821;
+	padding: 5px 10px 5px 10px;
+	background-color: #dde;
+	color: #000;
+	font-size: 10pt;
+	min-width: 200px;
+	text-shadow: 0 1px 0 white;
+	-moz-box-shadow: 1px 1px 2px #fff inset;
+	-webkit-box-shadow: 1px 1px 2px #fff inset;
+	box-shadow: 1px 1px 2px #fff inset;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    z-index: 991;
+
+}
+
+.calendar td.weekend {
+	/*border: 1px solid red; */
+	color: #555;
+}
+
+.calendar  .avail {
+	background-color: #36633B;
+}
+
+.calendar .alt {
+	background-color: #7B9B89;
+}
+
+.calendar .normal{
+	
+	background-color: #85A392;
+}
+
+.calendar .outofmonth{
+	background-color: #35533B;
+	color: #999;
+}
+
+.calendar .current{
+	/*background-color: #36734B;*/
+}
+
+.calendar .calcell {
+}
+
+.calendar .cellhead {
+	border-bottom: 1px dotted #4C5D53;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.calendar .current .cellhead {
+	border-bottom: 1px dotted #4C5D53;
+	clear: both;
+	float: left;
+	width: 100%;
+	background-color: #628B5E;
+}
+
+.calendar .cellhead:hover {
+	color: #000;
+	background-color: #8EBB8A;
+	cursor: pointer;
+}
+
+#reference.calendar { }
+#reference.calendar h4 { margin: 2px; }
